@@ -1,0 +1,18 @@
+# Node / build artifacts
+node_modules/
+dist/
+.cache/
+.vite/
+*.tsbuildinfo
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Env (keep app/.env out of the repo unless you intend to commit)
+*.env
+*.env.*
+!app/.env.example
