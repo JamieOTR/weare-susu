@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "name": "weare_susu",
+  "address": "4wZNSkNLR9T1fQYHqcn5h6ZtxDERLg5jeD6nqT6RvWwh",
+  "instructions": [
+    {
+      "name": "initExample",
+      "accounts": [
+        { "name": "payer", "isMut": true, "isSigner": true }
+      ],
+      "args": [
+        { "name": "bump", "type": "u8" }
+      ]
+    }
+  ],
+  "accounts": [],
+  "types": [],
+  "errors": [],
+  "metadata": {
+    "address": "4wZNSkNLR9T1fQYHqcn5h6ZtxDERLg5jeD6nqT6RvWwh"
+  }
+}

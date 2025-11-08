@@ -1,0 +1,28 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+weare_susu = "4wZNSkNLR9T1fQYHqcn5h6ZtxDERLg5jeD6nqT6RvWwh" # same ID unless you deploy a different version
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[dependencies]
+anchor-lang = "0.32.1"
+
+[toolchain]
+anchor_version = "0.32.1"
+
+[scripts]
+test = "/usr/bin/env node app/tests/test.js"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/allow-bad-names/.config/solana/id.json"
+
+

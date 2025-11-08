@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeAre SUSU – Solana Dev</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      (() => {
+        if (window.ethereum) {
+          try { delete window.ethereum; } catch { window.ethereum = undefined; }
+          console.log("🧹 [inline] Neutralized EVM provider");
+        }
+        if (typeof window.checkProgram2 !== "function") {
+          window.checkProgram2 = async () => {
+            console.log("✅ [inline] placeholder checkProgram2");
+            return "ok";
+          };
+        }
+      })();
+    </script>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
