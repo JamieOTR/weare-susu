@@ -40,7 +40,6 @@ declare global {
 
       const programId = new anchor.web3.PublicKey(idlAddress);
       const idl = idlJson as unknown as anchor.Idl;
-      // @ts-expect-error – force the 3-arg overload across anchor 0.28–0.30
 const program = new (anchor as any).Program(idl, programId, provider);
 
       console.log("Program ID:", programId.toBase58());
